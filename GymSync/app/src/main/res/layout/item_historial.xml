@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvNombreEjercicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ejemplo_nombre"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvNivel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ejemplo_nivel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNombreEjercicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvTiempoPrevisto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ejemplo_tiempoPrevisto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNivel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ejemplo_fecha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTiempoPrevisto"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvPorcentaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ejemplo_porcentaje"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvLinkVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/textViev_linkVideoCliente"
+            android:textColor="@color/emerald_dark"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/tvPorcentaje"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+

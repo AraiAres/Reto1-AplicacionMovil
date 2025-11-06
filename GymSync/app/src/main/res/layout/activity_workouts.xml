@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_workouts"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/colorBackground"
+    tools:context=".Workouts">
+
+
+    <Button
+        android:id="@+id/btnFiltrarWorkouts"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/button_filtrarWorkouts"
+        android:text="@string/button_filtrarWorkouts"
+        app:layout_constraintStart_toEndOf="@id/etFiltroNivelWorkouts"
+        app:layout_constraintTop_toBottomOf="@id/tvNivelUsuarioWorkouts" />
+
+    <TextView
+        android:id="@+id/tvNivelUsuarioWorkouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="132dp"
+        android:contentDescription="@string/textView_nivelUserWorkouts"
+        android:text="@string/textView_nivelUserWorkouts"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etFiltroNivelWorkouts"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="filtrar"
+        android:hint="@string/hint_filtrarNivelWorkouts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNivelUsuarioWorkouts" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistorial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etFiltroNivelWorkouts"
+        tools:listitem="@layout/item_workouts" />
+
+    <Button
+        android:id="@+id/btnVolverWorkouts"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:contentDescription="@string/button_volverWorkouts"
+        android:text="@string/button_volverWorkouts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="164dp"
+        android:layout_height="113dp"
+        app:layout_constraintBottom_toTopOf="@+id/etFiltroNivelWorkouts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_gym" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

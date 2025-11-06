@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">GymSync</string>
+
+    <!--Strings Login-->
+    <string name="textView_usuarioLogin">Usuario</string>
+    <string name="hint_usuarioLogin">Introduce tu usuario</string>
+    <string name="textView_contraseniaLogin">Contraseña</string>
+    <string name="hint_contraseniaLogin">Introduce tu contraseña</string>
+    <string name="button_loginLogin">Login</string>
+    <string name="button_registroLogin">Registro</string>
+    <string name="checkBox_rememberLogin">Recuerdame</string>
+    <string name="imageView_logoLogin">Logo</string>
+    <string name="textview_loginLogin">Login</string>
+    <string name="areyoutrainer">Es usted un entrenador?</string>
+
+    <!--Strings Registro-->
+    <string name="textView_registroRegistro">Registro</string>
+    <string name="textView_usuarioRegistro">Usuario</string>
+    <string name="hint_usuarioRegistro">Introduce un usuario</string>
+    <string name="textView_contraseniaRegistro">Contraseña</string>
+    <string name="hint_contraseniaRegistro">Introduce una contraseña</string>
+    <string name="textView_nombreRegistro">Nombre</string>
+    <string name="hint_nombreRegistro">Introduce un nombre</string>
+    <string name="textView_apellidoRegistro">Apellido</string>
+    <string name="hint_apellidoRregistro">Introduce apellido</string>
+    <string name="textView_emailRegistro">Email</string>
+    <string name="hint_emailRegistro">Introduce un email</string>
+    <string name="textView_fecNacRegistro">Fceha de nacimiento</string>
+    <string name="hint_fecNacRegistro">DD/MM/AAAA</string>
+    <string name="textView_tipoUsuarioRegistro">Tipo de usuario</string>
+    <string name="button_registroRegistro">Registro</string>
+    <string name="button_volverRegistro">Volver</string>
+    <string name="imageView_logoRegistro">Logo</string>
+
+    <!--Strings User-->
+    <string name="textView_usuarioCliente">Usuario</string>
+    <string name="textView_nombreCliente">Nombre</string>
+    <string name="textView_apellidoCliente">Apellido</string>
+    <string name="textView_emailCliente">Email</string>
+    <string name="textView_fecNacCliente">Fecha</string>
+    <string name="button_historialworkouts">Historial de Workouts</string>
+    <string name="button_gestionworkouts">Gestionar Workouts</string>
+    <string name="logout">Cerrar Sesion</string>
+    <string name="modifydata">Modificar datos de usuario</string>
+    <string name="textView_temaCliente">Tema</string>
+    <string name="textViev_linkVideoCliente">Link Video</string>
+    <string name="titulo_ajustes">Ajustes</string>
+    <string name="switch_temaCliente">Tema</string>
+    <string name="textView_idiomaCliente">Cambio de idioma</string>
+    <string name="switch_tema">Oscuro / Claro</string>
+    <string name="spanish">es</string>
+    <string name="english">en</string>
+
+    <!--Strings Workouts-->
+    <string name="textView_nivelUserWorkouts">Nivel</string>
+    <string name="hint_filtrarNivelWorkouts">0</string>
+    <string name="button_filtrarWorkouts">Filtrar</string>
+    <string name="button_perfilWorkouts">Perfil</string>
+    <string name="button_reproducirWorkouts">Reproducir</string>
+    <string name="button_volverWorkouts">Volver</string>
+    <string name="ejemplo_nombre">Nombre</string>
+    <string name="ejemplo_nivel">Nivel</string>
+    <string name="ejemplo_tiempoTotal">Tiempo Total</string>
+    <string name="ejemplo_tiempoPrevisto">Tiempo Previsto</string>
+    <string name="ejemplo_fecha">Fecha</string>
+    <string name="ejemplo_porcentaje">Procentaje</string>
+    <string name="ejemplo_cantidad">Cantidad ejercicios</string>
+    <string name="imageView_logoEntrenador">Logo</string>
+
+    <!--Strings Entrenador-->
+    <string name="hint_filtrarEjerEntrenador">Filtrar Ejercicios</string>
+    <string name="button_filtrarEntrenador">Filtrar</string>
+    <string name="button_agregarEntrenador">Agregar</string>
+    <string name="button_modificarEntrenador">Modificar</string>
+    <string name="button_eliminarEntrenador">Eliminar</string>
+    <string name="button_volverEntrenador">Volver</string>
+    <string name="textview_entrenador">Entrenador</string>
+    <string name="textViev_linkVideoEntrenador">Video</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">Signup</string>
+    <string name="email">Email</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellidos</string>
+    <string name="password">Contraseña</string>
+    <string name="birthdate">Fecha de Nacimiento</string>
+    <string name="login">Login</string>
+    <string name="remember_me">Recuérdame</string>
+    <string name="login_signup_description">Pestañas de login y singin</string>
+    <string name="volver">Volver</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="modificar">Modificar</string>
+    <string name="ejercicios_de_este_workout">Ejercicios de este Workout:</string>
+    <string name="https">https://...</string>
+    <string name="video_url">Video URL:</string>
+    <string name="ej_5">Ej: 5</string>
+    <string name="cantidad_de_ejercicios">Cantidad de Ejercicios:</string>
+    <string name="ej_intermedio">Ej: Intermedio</string>
+    <string name="nivel">Nivel:</string>
+    <string name="ej_full_body_blast">Ej: Full Body Blast</string>
+    <string name="nombre_del_workout">Nombre del Workout:</string>
+    <string name="add_workout">Añadir Workout</string>
+    <string name="add">Crear</string>
+    <string name="push_ups">Push Ups</string>
+    <string name="tipo_pecho">Tipo: Pecho</string>
+    <string name="ejercicios">Ejercicio</string>
+
+</resources>

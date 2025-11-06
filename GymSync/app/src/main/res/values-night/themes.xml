@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Dark Mode) -->
+    <style name="Base.Theme.GymSync" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- ===== Brand Colors (Invertidas) ===== -->
+        <item name="colorPrimary">@color/emerald_dark</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+        <item name="colorPrimaryContainer">@color/emerald</item>
+        <item name="colorOnPrimaryContainer">@android:color/black</item>
+
+        <item name="colorSecondary">@color/gray_green</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorSecondaryContainer">@color/primary_gold</item>
+        <item name="colorOnSecondaryContainer">@android:color/white</item>
+
+        <!-- ===== Background & Surfaces (Invertidas) ===== -->
+        <item name="android:colorBackground">@color/black_deep</item>
+        <item name="colorSurface">@color/black_deep</item>
+        <item name="colorOnSurface">@color/light_mint</item>
+
+        <!-- ===== Error Colors (igual, por contraste) ===== -->
+        <item name="colorError">@color/terminate_red</item>
+        <item name="colorOnError">@android:color/black</item>
+
+        <!-- ===== System Bars ===== -->
+        <item name="android:statusBarColor">@color/emerald</item>
+        <item name="android:navigationBarColor">@color/emerald</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- ===== Widget Defaults ===== -->
+        <item name="buttonStyle">@style/Widget.GymSync.Button</item>
+    </style>
+
+    <style name="Theme.GymSync" parent="Base.Theme.GymSync" />
+</resources>

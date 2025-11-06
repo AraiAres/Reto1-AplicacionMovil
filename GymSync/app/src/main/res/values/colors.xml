@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Corporate Colors -->
+    <color name="primary_dark">#160C28</color>
+    <color name="primary_gold">#EFCB68</color>
+    <color name="light_mint">#E1EFE6</color>
+    <color name="gray_green">#AEB7B3</color>
+    <color name="black_deep">#000411</color>
+    <color name="emerald">#26A69A</color>
+    <color name="emerald_dark">#004D40</color>
+
+    <!-- Accent / Action Colors -->
+    <color name="terminate_red">#E53935</color>
+    <color name="terminate_red_dark">#8B0000</color>
+
+</resources>

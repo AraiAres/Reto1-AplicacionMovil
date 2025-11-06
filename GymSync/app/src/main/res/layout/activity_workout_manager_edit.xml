@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workout_edit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/colorBackground"
+    tools:context=".WorkoutManagerEditActivity">
+
+    <ImageView
+        android:id="@+id/iVLogoEntrenador"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/imageView_logoEntrenador"
+        app:srcCompat="@drawable/logo_gym"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWorkoutEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modificar"
+        android:textColor="#160C28"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/iVLogoEntrenador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etWorkoutName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#160C28"
+        android:hint="@string/nombre_del_workout"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWorkoutEditTitle" />
+
+    <EditText
+        android:id="@+id/etWorkoutLevel"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#160C28"
+        android:hint="@string/nivel"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWorkoutName" />
+
+    <EditText
+        android:id="@+id/etWorkoutCount"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#160C28"
+        android:hint="@string/cantidad_de_ejercicios"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWorkoutLevel" />
+
+    <EditText
+        android:id="@+id/etWorkoutVideoUrl"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#160C28"
+        android:hint="@string/video_url"
+        android:inputType="textUri"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWorkoutCount" />
+
+    <TextView
+        android:id="@+id/tvExercisesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/ejercicios_de_este_workout"
+        android:textColor="#160C28"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWorkoutVideoUrl" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExercisesInWorkout"
+        android:layout_width="366dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="8dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvExercisesLabel"
+        tools:listitem="@layout/item_excercise" />
+
+    <LinearLayout
+        android:id="@+id/buttonRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvExercisesInWorkout">
+
+        <Button
+            android:id="@+id/btnModificarEntrenador"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:backgroundTint="#160C28"
+            android:text="@string/modificar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnEliminarEntrenador"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#B71C1C"
+            android:text="@string/eliminar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnVolverEntrenador"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:backgroundTint="#160C28"
+            android:text="@string/volver"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
